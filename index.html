@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Grandora Resort & Spa, a luxury escape offering elegant rooms, exceptional dining and unforgettable experiences.">
+  <title>Grandora Resort & Spa | Luxury Escape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">
+    AN EXCEPTIONAL ESCAPE. AN UNFORGETTABLE EXPERIENCE.
+  </div>
+
+  <header class="header">
+    <a href="#home" class="logo">GRANDORA<span>.</span>
+      <small>RESORT & SPA</small>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home">Home</a>
+      <a href="#rooms">Rooms & Suites</a>
+      <a href="#experience">Experience</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#booking" class="header-btn">Book Your Stay</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">WELCOME TO GRANDORA</p>
+        <h1>Discover a World of <span>Quiet Luxury.</span></h1>
+        <p>Escape the ordinary and experience exceptional comfort, beautiful surroundings and unforgettable moments.</p>
+        <div class="hero-actions">
+          <a href="#rooms" class="btn btn-primary">Explore Our Rooms</a>
+          <a href="#experience" class="btn btn-outline">Discover Grandora</a>
+        </div>
+      </div>
+
+      <div class="hero-caption">
+        <span>AN ESCAPE BEYOND EXPECTATIONS</span>
+        <span>01 — 04</span>
+      </div>
+    </section>
+
+    <section class="intro section" id="experience">
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1100" alt="Beautiful luxury resort swimming pool">
+      </div>
+      <div class="intro-content">
+        <p class="eyebrow">THE GRANDORA EXPERIENCE</p>
+        <h2>Where Every Moment Feels <span>Extraordinary.</span></h2>
+        <p>Welcome to a retreat designed around comfort, relaxation and thoughtful hospitality. From elegant accommodation to peaceful surroundings, every detail invites you to slow down and enjoy the moment.</p>
+        <a href="#contact" class="text-link">Discover Our Story →</a>
+      </div>
+    </section>
+
+    <section class="rooms section" id="rooms">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR PRIVATE RETREAT</p>
+          <h2>Rooms & <span>Suites</span></h2>
+        </div>
+        <p>Thoughtfully designed spaces where comfort meets timeless elegance.</p>
+      </div>
+
+      <div class="room-filters">
+        <button class="room-filter active" data-filter="all">All Rooms</button>
+        <button class="room-filter" data-filter="deluxe">Deluxe</button>
+        <button class="room-filter" data-filter="suite">Suites</button>
+        <button class="room-filter" data-filter="villa">Villas</button>
+      </div>
+
+      <div class="room-grid" id="roomGrid">
+
+        <article class="room-card" data-category="deluxe">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900" alt="Elegant deluxe hotel room">
+            <span class="room-tag">DELUXE</span>
+          </div>
+          <div class="room-info">
+            <h3>Deluxe Garden Room</h3>
+            <p>A peaceful retreat with refined interiors and beautiful garden views.</p>
+            <div class="room-bottom">
+              <strong>$180 <small>/ night</small></strong>
+              <button class="details-btn" data-name="Deluxe Garden Room" data-price="$180 / night" data-description="A peaceful deluxe room with refined interiors, comfortable bedding and beautiful garden views.">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-category="suite">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=900" alt="Premium luxury hotel suite">
+            <span class="room-tag">POPULAR</span>
+          </div>
+          <div class="room-info">
+            <h3>Grand Executive Suite</h3>
+            <p>Spacious accommodation with a separate lounge and premium comfort.</p>
+            <div class="room-bottom">
+              <strong>$280 <small>/ night</small></strong>
+              <button class="details-btn" data-name="Grand Executive Suite" data-price="$280 / night" data-description="A spacious executive suite with a separate lounge, premium furnishings and an elegant atmosphere.">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-category="villa">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900" alt="Private luxury villa">
+            <span class="room-tag">EXCLUSIVE</span>
+          </div>
+          <div class="room-info">
+            <h3>Private Signature Villa</h3>
+            <p>An exclusive private escape designed for a truly special stay.</p>
+            <div class="room-bottom">
+              <strong>$450 <small>/ night</small></strong>
+              <button class="details-btn" data-name="Private Signature Villa" data-price="$450 / night" data-description="An exclusive villa featuring generous living space, private surroundings and premium amenities.">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-category="deluxe">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900" alt="Contemporary deluxe hotel interior">
+          </div>
+          <div class="room-info">
+            <h3>Deluxe City View</h3>
+            <p>Contemporary comfort with beautiful views and thoughtful details.</p>
+            <div class="room-bottom">
+              <strong>$210 <small>/ night</small></strong>
+              <button class="details-btn" data-name="Deluxe City View" data-price="$210 / night" data-description="A contemporary deluxe room with elegant furnishings, comfortable bedding and beautiful views.">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-category="suite">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?w=900" alt="Elegant resort suite">
+          </div>
+          <div class="room-info">
+            <h3>Royal Serenity Suite</h3>
+            <p>Extra space, sophisticated details and a calm atmosphere.</p>
+            <div class="room-bottom">
+              <strong>$350 <small>/ night</small></strong>
+              <button class="details-btn" data-name="Royal Serenity Suite" data-price="$350 / night" data-description="A refined suite offering generous space, sophisticated details and a relaxing atmosphere.">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="room-card" data-category="villa">
+          <div class="room-image">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900" alt="Luxury tropical villa">
+          </div>
+          <div class="room-info">
+            <h3>Grandora Pool Villa</h3>
+            <p>A beautiful villa concept for guests seeking a private retreat.</p>
+            <div class="room-bottom">
+              <strong>$520 <small>/ night</small></strong>
+              <button class="details-btn" data-name="Grandora Pool Villa" data-price="$520 / night" data-description="A premium private villa concept with beautiful surroundings, generous space and a relaxing poolside setting.">View Details →</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="amenities section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THOUGHTFUL DETAILS</p>
+          <h2>Designed Around <span>You.</span></h2>
+        </div>
+      </div>
+
+      <div class="amenity-grid">
+        <article class="amenity">
+          <div class="amenity-icon">✧</div>
+          <h3>Wellness & Spa</h3>
+          <p>Discover a peaceful space dedicated to rest and relaxation.</p>
+        </article>
+        <article class="amenity">
+          <div class="amenity-icon">◈</div>
+          <h3>Infinity Pool</h3>
+          <p>Enjoy refreshing moments in a beautiful poolside setting.</p>
+        </article>
+        <article class="amenity">
+          <div class="amenity-icon">♨</div>
+          <h3>Fine Dining</h3>
+          <p>Explore a dining experience inspired by quality and creativity.</p>
+        </article>
+        <article class="amenity">
+          <div class="amenity-icon">⌘</div>
+          <h3>Fitness Centre</h3>
+          <p>Stay active with a dedicated fitness and wellness space.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A GLIMPSE OF GRANDORA</p>
+          <h2>Moments Worth <span>Remembering.</span></h2>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=900" alt="Resort pool">
+        <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=900" alt="Beautiful swimming pool">
+        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=900" alt="Luxury hotel exterior">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900" alt="Luxury hotel resort">
+      </div>
+    </section>
+
+    <section class="booking section" id="booking">
+      <div class="booking-content">
+        <p class="eyebrow">YOUR ESCAPE STARTS HERE</p>
+        <h2>Make Room for <span>Something Wonderful.</span></h2>
+        <p>Send us your preferred dates and accommodation details. Our demonstration form will show a sample confirmation.</p>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guestName">Full Name</label>
+            <input type="text" id="guestName" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="guestEmail">Email Address</label>
+            <input type="email" id="guestEmail" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="checkIn">Check-in</label>
+            <input type="date" id="checkIn" required>
+          </div>
+          <div class="form-group">
+            <label for="checkOut">Check-out</label>
+            <input type="date" id="checkOut" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="roomChoice">Accommodation</label>
+            <select id="roomChoice" required>
+              <option value="">Choose a room</option>
+              <option>Deluxe Garden Room</option>
+              <option>Grand Executive Suite</option>
+              <option>Private Signature Villa</option>
+              <option>Deluxe City View</option>
+              <option>Royal Serenity Suite</option>
+              <option>Grandora Pool Villa</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="guestCount">Guests</label>
+            <select id="guestCount" required>
+              <option value="">Select guests</option>
+              <option>1 Guest</option>
+              <option>2 Guests</option>
+              <option>3 Guests</option>
+              <option>4 Guests</option>
+              <option>5+ Guests</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn">Send Booking Enquiry →</button>
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        <small class="demo-note">DEMO WEBSITE — No real booking or payment will be processed.</small>
+      </form>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+      <h2>Begin Your <span>Grandora Story.</span></h2>
+      <p>Discover the experience. Imagine the possibilities.</p>
+      <a href="#booking" class="btn btn-primary">Enquire About a Stay</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">GRANDORA<span>.</span>
+      <small>RESORT & SPA</small>
+    </a>
+    <p>A luxury hotel website concept designed by Nexora Digital.</p>
+    <p class="footer-note">Fictional hotel, room rates and facilities created for demonstration purposes.</p>
+    <p>© 2026 Grandora Resort & Spa. All rights reserved.</p>
+  </footer>
+
+  <div class="modal" id="roomModal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <p class="eyebrow">ROOM DETAILS</p>
+      <h2 id="modalName">Room Name</h2>
+      <strong id="modalPrice"></strong>
+      <p id="modalDescription"></p>
+      <a href="#booking" class="btn btn-primary" id="modalBook">Enquire About This Room</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
